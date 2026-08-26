@@ -1,0 +1,133 @@
+chmod 400 First-key.pem
+
+ssh -i "dswarm.pem" ec2-user@ec2-18-191-227-36.us-east-2.compute.amazonaws.com
+
+ssh -i "First-key.pem" ec2-user@ec2-18-191-227-36.us-east-2.compute.amazonaws.com
+
+
+SYSTEM COMMANDS:
+uname
+uname-r
+uname-a
+
+uptime
+uptime-p
+uptime-s
+
+who
+whoami
+
+hostname
+hostnamectl set-hostname (give the name to be updated)
+
+hostname -i
+ip addr
+ip route
+ifconfig
+
+curl ifconfig.me
+
+cal
+cal 2028
+date
+timedatectl
+timedatectl srt-timezone Asia\Kolkatha
+date (in IST)
+date +"%H,M,S,m,d,y"
+history (for all performed commands)
+
+
+
+HARDWARE COMMANDS:
+lscpu or
+cat /proc/cpuinfo
+
+
+FILE COMMANDS:
+touch filename
+touch file1 file2 file3 etc
+touch filename{1..6}
+touch file{4..9}
+rm filename
+rm -f filename
+rm -f file1 file2 etc
+rm -f*
+rm -f a*
+rm -f*.txt
+rm -f file{3..8}
+
+mkdir filename
+mkdir file1 file2 file3 etc
+mkdir filename{1..6}
+mkdir file{4..9}
+rmdir filename(empty directory)
+rm -rf folder(non empty)
+rmdir *
+rm -rf*
+
+
+EDITOR COMMANDS:
+
+COMMAND MODE:
+
+first line -gg or :1
+laast line- G
+5th line - 5gg
+copy a line- yy
+to copy 4 lines- 4yy
+to paste data- p
+to paste 10times - 10p
+delete a line - dd
+to del 10lnes- 10dd
+to undo the changes- u
+to redo the changes- ctrl+r
+to set number- :set number
+to remove numbers- :set nonumber
+to search for a word- /word or ?word
+to replace a word- :%s/old/new/g
+
+INSERT MODE:
+
+command mode to insert mode- i
+back to command mode: esc key
+go to end of the line- A
+starting of the line- I
+
+SAVE AND QUIT MODE:
+
+to save the data- :w
+to quit from vi editor- :q
+to save and quit at a time- :wq
+to quit without saving the changes- :q!
+
+
+USER COMMANDS:
+check username if there or not: getent passwd or cat /etc/passwd
+to check for particular user: id username
+to add user: useradd or adduser
+
+delete the  user only: userdel username
+
+delete the  user along with path: userdel -r username
+to set pwd tp user: passwd username
+to login to user: su - username
+to add group: groupadd or add group
+group delete: groupdel groupname
+to add user to a group: usermod -aG group username
+to switch user to another: su -username to be changed
+
+PERMISSION COMMANDS: to give permissions to any file
+user first 3, group next 3, others last 3
+
+r -->read=4
+w -->write=2
+x -->execute=1
+- -->nothing=0
+
+98.92.209.208
+
+
+
+
+
+
